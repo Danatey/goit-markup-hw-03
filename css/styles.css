@@ -23,6 +23,7 @@ a {
 li {
   list-style: none;
 }
+
 .logo-web {
   color: var(--accent-color);
 }
@@ -73,6 +74,46 @@ button {
   font-style: normal;
   font-family: inherit;
 }
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+/* positions */
+.conteiner {
+  width: 1140px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+header > .conteiner,
+.header-nav,
+.header-link,
+.header-contacts {
+  display: flex;
+  align-items: center;
+}
+.header-contacts {
+  margin-left: auto;
+}
+.studio-header {
+  padding-right: 93px;
+}
+header ul {
+  padding: 0px;
+  margin: 0px;
+}
+.header-link > li,
+.header-contacts > li {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.header-link > li:not(:last-child),
+.header-contacts > li:not(:last-child) {
+  padding-right: 50px;
+}
 /* index.html */
 .hero-section {
   background-color: var(--accent-background);
@@ -83,9 +124,6 @@ button {
 .button:focus {
   background-color: var(--accent-color);
   color: var(--primary-color);
-}
-.ghost-text {
-  display: none;
 }
 .advantages-text,
 .profession {
@@ -98,6 +136,22 @@ button {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  margin-top: 0px;
+  margin-bottom: 30px;
+  padding-top: 200px;
+}
+.hero-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-right: 32px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+}
+.hero-section {
+  padding-bottom: 200px;
 }
 .head-phrase {
   font-weight: 700;
@@ -114,6 +168,7 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+
 /* portfolio.html */
 .button {
   background-color: var(--background-additional-color);
@@ -122,6 +177,7 @@ button {
   line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
+  cursor: pointer;
 }
 .project-name {
   color: var(--primary-text-color);
