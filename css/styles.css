@@ -69,6 +69,9 @@ li {
   font-weight: 500;
   letter-spacing: 0.02em;
 }
+header {
+  border-bottom: 1px solid #ececec;
+}
 .footer-address,
 button {
   font-style: normal;
@@ -83,9 +86,11 @@ button {
 }
 /* positions */
 .conteiner {
-  width: 1140px;
-  margin-left: 15px;
-  margin-right: 15px;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 header > .conteiner,
 .header-nav,
@@ -114,10 +119,26 @@ header ul {
 .header-contacts > li:not(:last-child) {
   padding-right: 50px;
 }
+.footer-block {
+  padding-top: 60px;
+}
+.footer-block > ul {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  padding-bottom: 60px;
+}
+.footer-block li:not(:last-child) {
+  padding-bottom: 9px;
+}
 /* index.html */
 .hero-section {
   background-color: var(--accent-background);
   color: var(--primary-color);
+}
+.button-active {
+  border: 0px;
+  border-radius: 4px;
 }
 .button-active,
 .button:hover,
@@ -153,12 +174,81 @@ header ul {
 .hero-section {
   padding-bottom: 200px;
 }
+.advantages {
+  padding-top: 94px;
+}
+.advantages-list {
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 94px;
+  padding: 0px;
+}
+.advantages-list > li:not(:last-child) {
+  margin-right: 30px;
+}
+.advantages-list h3 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.advantages-list p {
+  margin: 0px;
+}
+.we-are-working > h2 {
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+.we-are-working > ul {
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 94px;
+  padding: 0px;
+}
+.we-are-working img {
+  display: block;
+}
+.we-are-working li:not(:last-child) {
+  margin-right: 30px;
+}
+.team-section {
+  background-color: var(--background-additional-color);
+}
 .head-phrase {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+
+  margin-top: 0px;
+  margin-bottom: 50px;
+  padding-top: 94px;
+}
+.team-section ul {
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  padding-bottom: 94px;
+}
+.team-section li {
+  background-color: var(--primary-color);
+}
+.team-section li:not(:last-child) {
+  margin-right: 30px;
+}
+.team-section img {
+  display: block;
+  margin-bottom: 30px;
+}
+.comand-name {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.profession {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 .little-phrase,
 .comand-name {
@@ -170,6 +260,16 @@ header ul {
 }
 
 /* portfolio.html */
+.button-list {
+  display: flex;
+  margin-top: 94px;
+  margin-bottom: 50px;
+  padding: 0px;
+  justify-content: center;
+}
+.button-list > li:not(:last-child) {
+  margin-right: 8px;
+}
 .button {
   background-color: var(--background-additional-color);
   font-weight: 500;
@@ -178,6 +278,29 @@ header ul {
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
+  border: 0px;
+  border-radius: 4px;
+}
+.worcks-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0px;
+  margin-right: -10px;
+  margin-bottom: 94px;
+  margin-left: -10px;
+  padding: 0px;
+  justify-content: center;
+}
+.worcks-list > li {
+  margin-right: 10px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  flex-basis: calc(100% / 3 - 30px);
+  border: 1px solid #eeeeee;
+}
+.worcks-list img {
+  display: block;
+  margin-bottom: 20px;
 }
 .project-name {
   color: var(--primary-text-color);
@@ -185,9 +308,19 @@ header ul {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
+  margin-top: 0px;
+  margin-bottom: 4px;
+  padding-right: 24px;
+  padding-left: 24px;
 }
 .project-category {
   color: var(--subsidiary-text-color);
   font-size: 16px;
   line-height: 1.88;
+
+  margin-top: 0px;
+  margin-bottom: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
 }
